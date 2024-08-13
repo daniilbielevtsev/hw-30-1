@@ -1,0 +1,39 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container {
+  
+      width: 500px;
+      height: 500px;
+  }
+  .box {
+      background-color: red;
+      width: 100px;
+      height: 100px;
+      animation: transforing 3s cubic-bezier(0, 0, 0.5, 1.04) 0s infinite both ;
+  }
+  @keyframes transforing {
+      0%{
+          transform: translate(0 0);
+          background-color: red;
+      }
+       25%{
+          transform: translateY(+100%) translateX(0);
+          background-color: blue;
+       } 
+        50%{
+          transform: translateX(+100%) translateY(+100%);
+          background-color: green;
+      }   
+      75%{
+          transform: translateX(+100%) translateY(0%);
+          background-color: yellow;
+      } 
+      100%{
+          transform: translate(0 0);
+          background-color: red;
+      }
+  }
